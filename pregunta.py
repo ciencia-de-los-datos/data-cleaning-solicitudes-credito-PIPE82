@@ -10,7 +10,7 @@ import pandas as pd
 
 
 def clean_data():
-    ##
+    
 
     df = pd.read_csv("solicitudes_credito.csv", sep=";",index_col=0)
 
@@ -32,5 +32,8 @@ def clean_data():
 
     #borrar los duplicados
     df.drop_duplicates(inplace=True)
+    
+   
 
     return df
+
