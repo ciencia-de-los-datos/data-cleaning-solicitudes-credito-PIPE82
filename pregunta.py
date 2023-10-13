@@ -13,9 +13,7 @@ def clean_data():
 
     df = pd.read_csv("solicitudes_credito.csv", sep=";",index_col=0)
 
-    #
-    # Inserte su código aquí
-    #
+    
     #data=pd.read_csv("C:/Users/Andres/Documents/GitHub/data-cleaning-solicitudes-credito-PIPE82/solicitudes_credito.csv", sep=";", index_col=0)
 
 
