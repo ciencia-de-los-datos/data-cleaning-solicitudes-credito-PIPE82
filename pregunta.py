@@ -13,9 +13,6 @@ def clean_data():
 
     df = pd.read_csv("solicitudes_credito.csv", sep=";",index_col=0)
 
-    
-    #data=pd.read_csv("C:/Users/Andres/Documents/GitHub/data-cleaning-solicitudes-credito-PIPE82/solicitudes_credito.csv", sep=";", index_col=0)
-
 
     #borrar todas las filas con espacios vacios
     df.dropna(inplace=True)
