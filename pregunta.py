@@ -34,7 +34,7 @@ def clean_data():
     df.fecha_de_beneficio = pd.to_datetime(df['fecha_de_beneficio'],dayfirst=True)
 
 
-    #convertir float
+    #convertir float, nuevo
     df.monto_del_credito = df.monto_del_credito.astype(float)
 
     #borrar los duplicados
