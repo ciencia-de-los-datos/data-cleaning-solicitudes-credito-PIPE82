@@ -7,6 +7,7 @@ correctamente. Tenga en cuenta datos faltantes y duplicados.
 
 """
 import pandas as pd
+import datetime as dt
 
 
 def clean_data():
@@ -27,13 +28,12 @@ def clean_data():
     #covertir a fecha
     df.fecha_de_beneficio = pd.to_datetime(df['fecha_de_beneficio'],dayfirst=True)
 
+
     #convertir float
     df.monto_del_credito = df.monto_del_credito.astype(float)
 
     #borrar los duplicados
     df.drop_duplicates(inplace=True)
-    
-   
 
     return df
 
